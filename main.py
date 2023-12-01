@@ -189,4 +189,4 @@ def example():
 
 
 
-ft.app(target=main, assets_dir="assets", name='', port=8555)
+ft.app(target=main, assets_dir="assets", name='', port=8555, view=None)
