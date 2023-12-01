@@ -20,4 +20,4 @@ CMD ["python3", "main.py"]
 
 ENV LANG en_US.utf8
 
-HEALTHCHECK --interval=30s --timeout=5s CMD curl -f http://127.0.0.1:8555/ || exit 1
+HEALTHCHECK --interval=30s --timeout=5s CMD curl -f http://0.0.0.0:8555/ || exit 1
