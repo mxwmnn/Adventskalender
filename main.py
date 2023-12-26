@@ -1,5 +1,5 @@
 import flet as ft
-from random import randint, choice, shuffle
+from random import randint, shuffle
 from const import weihnachtsraetsel, weihnachtliche_erfolgsmeldungen, weihnachtliche_fehlermeldungen
 import requests
 import sys
@@ -31,8 +31,8 @@ def days_until_christmas():
     christmas = datetime(year=current_datetime.year, month=12, day=24)
 
     # Falls das aktuelle Datum nach Weihnachten ist, nimm Weihnachten im nächsten Jahr
-    if current_datetime > christmas:
-        sys.exit(0)
+    # if current_datetime > christmas:
+    #     sys.exit(0)
 
     # Berechne die Differenz zwischen den Tagen
     delta = (christmas - current_datetime).days
@@ -189,4 +189,4 @@ def example():
 
 
 
-ft.app(target=main, assets_dir="assets", name='', port=8555, view=None)
+ft.app(target=main)#, assets_dir="assets", name='', port=8555, view=None)
